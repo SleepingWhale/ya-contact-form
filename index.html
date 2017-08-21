@@ -3,18 +3,19 @@
 <head>
   <meta charset="UTF-8">
   <title>Title</title>
+  <link href="index.css" rel="stylesheet" type="text/css">
 </head>
 <body>
 
 <form id="myForm" action="responses/success.json">
-  <label> ФИО <input type="text" name="fio"></label><br>
-  <label> Email <input type="text" name="email"></label><br>
-  <label> Телефон <input type="text" name="phone"></label><br>
+  <label><span>ФИО</span><input type="text" name="fio"></label><br>
+  <label><span>Email</span><input type="text" name="email"></label><br>
+  <label><span>Телефон</span><input type="text" name="phone"></label><br>
   <input type="submit" value="Submit" id="submitButton"><br>
+  <div id="resultContainer" ></div>
 </form>
 
-<div id="resultContainer" ></div>
-
+<script src="vendor/js/jquery-3.2.1.js" type="text/javascript"></script>
 <script src="index.js" type="text/javascript"></script>
 
 </body>
